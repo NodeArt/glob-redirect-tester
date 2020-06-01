@@ -1,1 +1,1 @@
-# glob-resirect-tester
+# glob-redirect-tester
