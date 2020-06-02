@@ -5,10 +5,11 @@ cache: npm
 script:
   - echo "Starting travis deployment"
   - npm run build
-  - npm run deploy -- --token $FIREBASE_TOKEN
+  - npm run deploy -- --project $TRAVIS_BRANCH --token $FIREBASE_TOKEN
 install:
   - npm ci
   - npm ci --prefix functions
 branches:
   only:
     - master
+    - dev

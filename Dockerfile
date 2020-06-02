@@ -5,4 +5,4 @@ RUN npm ci && npm ci --prefix functions
 COPY . .
 ARG firebasekey
 RUN npm run build
-RUN FIREBASE_TOKEN=$firebasekey npm run deploy --non-interactive
+RUN FIREBASE_TOKEN=$firebasekey npm run deploy --project default --non-interactive
