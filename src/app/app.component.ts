@@ -33,10 +33,12 @@ export class AppComponent implements OnInit{
       tap(([from, to, url, isClicked]: [string, string, string, boolean]) => {
         this.match.checkWildcardPatterns(from, url, to).subscribe(
           (result: IMyResult) => {
-            this.UrlForRedirectField.next(result.result.edited);
-            const resultArray = result.result.result;
-            resultArray.shift();
-            this.resultArray.next(resultArray);
+            if (result !== undefined) {
+              this.UrlForRedirectField.next(result.result.edited);
+              const resultArray = result.result.result;
+              resultArray.shift();
+              this.resultArray.next(resultArray);
+            }
           }
         );
         this.clickedBtn.next(false);

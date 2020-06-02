@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "glob-redirect-test",
+    "dev": "glob-redirect-test-v2"
+  }
+}
