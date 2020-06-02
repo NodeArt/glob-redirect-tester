@@ -2,7 +2,7 @@ import {HttpClient} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 
-const FUNCTION_URL = 'https://us-central1-glob-redirect-test-v2.cloudfunctions.net/globMatcher';
+const FUNCTION_URL = '/match';
 
 export interface IMyResult {
   result: {
