@@ -1,7 +1,7 @@
 {
   "projects": {
     "default": "glob-redirect-test",
-    "master": "glob-redirect-test"
+    "master": "glob-redirect-test",
     "dev": "glob-redirect-test-v2"
   }
 }
